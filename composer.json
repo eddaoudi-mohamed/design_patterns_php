@@ -1,0 +1,10 @@
+{
+    "name": "designPattern",
+    "description": "code example for design pattern",
+    "autoload": {
+        "psr-4": {
+            "Root\\Html\\": "src/"
+        }
+    },
+    "require": {}
+}
