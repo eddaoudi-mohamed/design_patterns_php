@@ -11,6 +11,11 @@ ADD . /var/www/html
 
 # Install Composer
 COPY --from=composer/composer:latest-bin /composer /usr/bin/composer
+RUN apt-get update && apt-get install -y \
+    zlib1g-dev \
+    libzip-dev \
+    unzip
+RUN docker-php-ext-install zip
 
 # Set environment variables in Apache configuration
 RUN echo 'SetEnv MYSQL_DB_CONNECTION ${MYSQL_DB_CONNECTION}' >> /etc/apache2/conf-enabled/environment.conf
