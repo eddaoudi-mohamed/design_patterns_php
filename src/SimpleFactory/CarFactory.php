@@ -1,13 +1,14 @@
 <?php
- 
-namespace src\SimpleFactory ; 
+
+namespace src\SimpleFactory;
 
 
-class CarFactory { 
+class CarFactory
+{
 
 
-    public function createCar($type){ 
-        return new Car($type) ; 
+    public function createCar($type)
+    {
+        return new Car($type);
     }
-
 }
