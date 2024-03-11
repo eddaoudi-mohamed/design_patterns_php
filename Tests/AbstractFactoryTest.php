@@ -18,7 +18,3 @@ class AbstractFactoryTest extends TestCase
         $this->assertInstanceOf(BMWCar::class, $mycar);
     }
 }
-$obj = new AbstractFactoryTest("AbstractFactoryTest") ; 
-echo "hello in here "  ; 
-
-$obj->testCanCreateBMWCar() ; 
