@@ -1,11 +1,11 @@
 <?php
 
-namespace src\Abstractfactory;
+namespace src\StaticFactory;
 
 
 class StaticFactory
 {
-    public static function StaticFactory($type)
+    public static function Factory($type)
     {
 
         if ($type === "BMW") {
