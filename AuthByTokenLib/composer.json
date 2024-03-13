@@ -1,0 +1,16 @@
+{
+    "name": "root/auth-by-token",
+    "description": "this is library for Auth  by token",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TokenAuth\\": "TokenAuth/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamedEddaoudi"
+        }
+    ],
+    "require": {}
+}

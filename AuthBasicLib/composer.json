@@ -1,0 +1,16 @@
+{
+    "name": "root/auth-basic",
+    "description": "this",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "BasicAuth\\": "BasicAuth/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed"
+        }
+    ],
+    "require": {}
+}
