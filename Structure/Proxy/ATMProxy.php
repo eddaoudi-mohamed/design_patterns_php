@@ -15,14 +15,4 @@ class ATMProxy extends BanckAccount implements BanckAccountInterface
         }
         return $this->balance;
     }
-
-    public function deposit(int $amount)
-    {
-        return parent::deposit($amount);
-    }
-
-    public function withdraw(int $amount)
-    {
-        return parent::withdraw($amount);
-    }
 }

@@ -17,6 +17,11 @@ RUN apt-get update && apt-get install -y \
     unzip
 RUN docker-php-ext-install zip
 
+RUN pecl install -o -f xdebug \
+    && docker-php-ext-enable xdebug
+
+COPY ./php.ini /usr/local/etc/php/
+
 # Set environment variables in Apache configuration
 RUN echo 'SetEnv MYSQL_DB_CONNECTION ${MYSQL_DB_CONNECTION}' >> /etc/apache2/conf-enabled/environment.conf
 RUN echo 'SetEnv MYSQL_DB_NAME ${MYSQL_DB_NAME}' >> /etc/apache2/conf-enabled/environment.conf
